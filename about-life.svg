@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="100%" role="img" aria-labelledby="al-title al-desc">
+  <title id="al-title">About Pranjal Tripathi</title>
+  <desc id="al-desc">Professional introduction, core backend capabilities, and a three-interest carousel. The carousel changes every four seconds using SMIL and has a static fallback.</desc>
+
+  <defs>
+    <linearGradient id="al-border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#247bff" stop-opacity="0.9"/>
+      <stop offset="0.52" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#ff354f" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="al-blue-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(115 120) rotate(90) scale(190)">
+      <stop offset="0" stop-color="#247bff" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#247bff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="al-red-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1085 455) rotate(90) scale(220)">
+      <stop offset="0" stop-color="#ff354f" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#ff354f" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="al-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.06"/>
+    </pattern>
+    <filter id="al-soft-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .al-text{fill:#f4f7fb;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .al-muted{fill:#a7b1c2;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    .al-eyebrow{fill:#8c97aa;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;font-weight:700;letter-spacing:2.8px}
+    .al-label{fill:#758198;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:12px;font-weight:800;letter-spacing:1.8px}
+    .al-card{fill:#0d1424;stroke:url(#al-border);stroke-width:1.2}
+    .al-chip{fill:#0a1120;stroke:#22304a;stroke-width:1}
+    .al-blue{fill:#247bff}
+    .al-red{fill:#ff354f}
+    .al-divider{stroke:#1d2a41;stroke-width:1}
+  </style>
+
+  <rect width="1200" height="560" rx="28" fill="#070b16"/>
+  <rect width="1200" height="560" rx="28" fill="url(#al-dots)"/>
+  <circle cx="115" cy="120" r="190" fill="url(#al-blue-glow)"/>
+  <circle cx="1085" cy="455" r="220" fill="url(#al-red-glow)"/>
+
+  <!-- Header -->
+  <g>
+    <text x="70" y="70" class="al-eyebrow">ABOUT / LIFE</text>
+    <text x="70" y="125" class="al-text" font-size="39" font-weight="800">Building reliable backend systems</text>
+    <text x="70" y="161" class="al-muted" font-size="17.5">Java and Spring Boot developer focused on clean REST APIs,</text>
+    <text x="70" y="188" class="al-muted" font-size="17.5">maintainable backend services, and strong software engineering fundamentals.</text>
+  </g>
+
+  <!-- Capabilities -->
+  <g transform="translate(70 225)">
+    <rect width="655" height="270" rx="24" class="al-card"/>
+    <text x="28" y="38" class="al-label">CORE CAPABILITIES</text>
+
+    <g font-size="15.5" font-weight="700" class="al-text">
+      <rect x="28" y="62" width="184" height="42" rx="21" class="al-chip"/>
+      <text x="48" y="88">REST API Design</text>
+
+      <rect x="224" y="62" width="180" height="42" rx="21" class="al-chip"/>
+      <text x="244" y="88">Spring Boot</text>
+
+      <rect x="416" y="62" width="186" height="42" rx="21" class="al-chip"/>
+      <text x="436" y="88">Spring Security</text>
+
+      <rect x="28" y="116" width="184" height="42" rx="21" class="al-chip"/>
+      <text x="48" y="142">JPA / Hibernate</text>
+
+      <rect x="224" y="116" width="180" height="42" rx="21" class="al-chip"/>
+      <text x="244" y="142">SQL / MySQL</text>
+
+      <rect x="416" y="116" width="186" height="42" rx="21" class="al-chip"/>
+      <text x="436" y="142">JWT Authentication</text>
+    </g>
+
+    <line x1="28" y1="181" x2="627" y2="181" class="al-divider"/>
+    <text x="28" y="208" class="al-label">INTERESTS</text>
+
+    <!-- Static, non-animated summary. Keeps essential information readable. -->
+    <g transform="translate(28 226)" font-size="14.5">
+      <circle cx="6" cy="7" r="5" fill="#247bff"/>
+      <text x="22" y="12" class="al-text" font-weight="650">Backend Engineering</text>
+
+      <circle cx="205" cy="7" r="5" fill="#ff354f" opacity="0.75"/>
+      <text x="221" y="12" class="al-muted">Problem Solving &amp; DSA</text>
+
+      <circle cx="405" cy="7" r="5" fill="#64748b"/>
+      <text x="421" y="12" class="al-muted">Exploring New Technologies</text>
+    </g>
+    <text x="28" y="258" class="al-muted" font-size="12.5">Focus areas rotate in the panel on the right every 4 seconds.</text>
+  </g>
+
+  <!-- Interest carousel -->
+  <g transform="translate(750 225)">
+    <rect width="380" height="270" rx="24" fill="#0a1120" stroke="url(#al-border)" stroke-width="1.2"/>
+    <text x="28" y="38" class="al-label">WHAT I’M INTO</text>
+
+    <!-- Slide 01 -->
+    <g opacity="1">
+      <text x="28" y="98" class="al-blue" font-size="16" font-weight="800">01</text>
+      <text x="28" y="139" class="al-text" font-size="28" font-weight="800">Backend Engineering</text>
+      <text x="28" y="170" class="al-muted" font-size="14.5">Building clean APIs and dependable services.</text>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="0s"
+               values="1;1;0;0;0;0;1"
+               keyTimes="0;0.2667;0.3333;0.6;0.6667;0.9333;1"/>
+    </g>
+
+    <!-- Slide 02 -->
+    <g opacity="0">
+      <text x="28" y="98" class="al-red" font-size="16" font-weight="800">02</text>
+      <text x="28" y="139" class="al-text" font-size="27" font-weight="800">Problem Solving &amp; DSA</text>
+      <text x="28" y="170" class="al-muted" font-size="14.5">Strengthening algorithmic thinking through practice.</text>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="0s"
+               values="0;0;1;1;0;0;0"
+               keyTimes="0;0.2667;0.3333;0.6;0.6667;0.9333;1"/>
+    </g>
+
+    <!-- Slide 03 -->
+    <g opacity="0">
+      <text x="28" y="98" class="al-blue" font-size="16" font-weight="800">03</text>
+      <text x="28" y="139" class="al-text" font-size="25.5" font-weight="800">Exploring New Technologies</text>
+      <text x="28" y="170" class="al-muted" font-size="14.5">Learning tools that deepen engineering capability.</text>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="0s"
+               values="0;0;0;0;1;1;0"
+               keyTimes="0;0.2667;0.3333;0.6;0.6667;0.9333;1"/>
+    </g>
+
+    <!-- Reduced-motion / unsupported animation fallback -->
+    <g class="al-reduced" visibility="hidden">
+      <text x="28" y="98" class="al-blue" font-size="16" font-weight="800">01</text>
+      <text x="28" y="139" class="al-text" font-size="28" font-weight="800">Backend Engineering</text>
+      <text x="28" y="170" class="al-muted" font-size="14.5">Building clean APIs and dependable services.</text>
+    </g>
+
+    <!-- Segment progress -->
+    <g transform="translate(28 218)">
+      <rect x="0" y="0" width="98" height="6" rx="3" fill="#1b2942"/>
+      <rect x="110" y="0" width="98" height="6" rx="3" fill="#1b2942"/>
+      <rect x="220" y="0" width="98" height="6" rx="3" fill="#1b2942"/>
+
+      <rect x="0" y="0" width="98" height="6" rx="3" fill="#247bff">
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="0s"
+                 values="1;1;0.28;0.28;0.28;0.28;1"
+                 keyTimes="0;0.2667;0.3333;0.6;0.6667;0.9333;1"/>
+      </rect>
+      <rect x="110" y="0" width="98" height="6" rx="3" fill="#ff354f" opacity="0.28">
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="0s"
+                 values="0.28;0.28;1;1;0.28;0.28;0.28"
+                 keyTimes="0;0.2667;0.3333;0.6;0.6667;0.9333;1"/>
+      </rect>
+      <rect x="220" y="0" width="98" height="6" rx="3" fill="#247bff" opacity="0.28">
+        <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="0s"
+                 values="0.28;0.28;0.28;0.28;1;1;0.28"
+                 keyTimes="0;0.2667;0.3333;0.6;0.6667;0.9333;1"/>
+      </rect>
+
+      <circle cx="0" cy="3" r="2.5" fill="#ffffff" opacity="0.75" filter="url(#al-soft-glow)">
+        <animate attributeName="cx" dur="12s" repeatCount="indefinite" begin="0s" values="0;98;110;208;220;318;0" keyTimes="0;0.2667;0.3333;0.6;0.6667;0.9333;1"/>
+      </circle>
+    </g>
+
+    <text x="28" y="252" class="al-muted" font-size="12.5">Each focus area stays on screen for about 4 seconds.</text>
+  </g>
+</svg>
